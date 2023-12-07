@@ -22,7 +22,7 @@ function TodoList({ todo }) {
   return (
     <div
       className={`  dark:bg-card-dark bg-card-light
-				w-[500px] p-c-padding py-1 flex  items-center justify-center  rounded-t-md border-line-light
+				w-[350px] md:w-[500px] p-c-padding py-1 flex  items-center justify-center  rounded-t-md border-line-light
 				dark:border-line-dark border-b-[1px]  
 				`}>
       <div
@@ -61,7 +61,7 @@ function TodoList({ todo }) {
         className={`w-full h-[2rem] pr-[1.8rem] pl-[2.1rem] bg-transparent  border-b-[1px] 
          ${isTodoEditable ? "dark:border-deep-purple-400 border-black" : "border-none"}
         placeholder:text-[#727575] text-[#484b6a] dark:text-[#cacde8]  text-lg focus:outline-none overflow-hidden ${
-          todo.completed && "line-through dark:text-blue-gray-500"
+          todo.completed && "line-through dark:text-gray-700"
         } `}
       />
 

@@ -80,7 +80,7 @@ function App() {
 
         <div className=" bg-bg-light dark:bg-bg-dark overflow-x-hidden  w-screen h-screen font-Josefin text-[14px] select-none">
 
-          < Header />
+          < Header theme = {theme } />
 
           <main className=" w-full  flex flex-col  items-center justify-center  ">
             {todos.map((todo ) => {

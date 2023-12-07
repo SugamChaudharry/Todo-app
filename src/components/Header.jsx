@@ -1,15 +1,14 @@
 import React from 'react'
-import { useState } from 'react';
 import Github from './Github';
 import ThemeBtn from './ThemeBtn';
 import TodoForm from './TodoForm';
 
-function Header() {
-     const [theme, SetTheme] = useState("dark");
+function Header({theme}) {
+     
   return (
     <header className="w-full relative h-[230px] flex items-center justify-center z-[1]">
       <img
-        src={theme === "dark" ? "images/bg-desktop-dark.jpg" : "/images/bg-desktop-light.jpg"}
+        src={theme === "dark" ? "/images/bg-desktop-dark.jpg" : "/images/bg-desktop-light.jpg"}
         alt="banner"
         className="w-full absolute h-[190px] md:h-[210px] lg:h-[270px] top-0 left-0 object-cover"
       />
